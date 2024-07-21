@@ -1,0 +1,129 @@
+@use "../variables/variables" as v;
+
+.form-block {
+    padding: 20px;
+    padding-left: 0;
+    box-shadow: 0 4px 20px v.$shadow-color;
+
+    .form__title {
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 700;
+        color: #333;
+    }
+
+    .errors {
+        display: none;
+        margin: 15px;
+        padding: 20px;
+        background-color: #ddc80dd7;
+        
+        .error{
+            margin-top: 10px;
+            color: v.$red-color;
+        }
+        .error:first-child {
+            margin-top: 0;
+        }
+    }
+
+    form {
+        width: 100%;
+
+        .form__inputs{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .inputs-block {
+                display: flex;
+                flex-wrap: wrap;
+
+                label {
+                    width: 100%;
+                    position: relative;
+
+                    input {
+                        width: 100%;
+                        height: 50px;
+                        margin-top: 20px;
+                        padding: 0 17px;
+                        border: 1px solid v.$border-color;
+                        outline:none;
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+
+                    .animate__input__text {
+                        position: absolute;
+                        top: 50%;
+                        left: 20px;
+                        transform: translateY(20%);
+                        color: #999991;
+                        font-size: 14px;
+                        font-weight: 400;
+                        transition: all .3s ease;
+                    }
+                }
+
+                label.focused {
+                    .animate__input__text {
+                        position: absolute;
+                        top: 7px;
+                        left: 0;
+                        font-size: 11px;
+                    }
+                }
+
+                .animate__input__text {
+                    user-select: none;
+                }
+            }
+        }
+        
+        .button-block {
+            margin-top: 20px;
+        }
+        
+    }
+}
+
+.result-table {
+    display: none;
+    margin-top: -20vh;
+    padding: 10px;
+    box-shadow: 0 4px 20px v.$shadow-color;
+    
+    table {
+        border: 1px solid v.$border-color;
+        font-size: 20px;
+
+        tr {
+            border: 1px solid v.$border-color;
+
+            td {
+                border: 1px solid v.$border-color;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 639px) {
+    .result-table {
+        margin-top: -5vh;
+    }
+}
+
+@media (max-width: 499px) {
+    .result-table {
+        table {
+            font-size: 9px;
+
+            td {
+                padding: 5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+.news .news__text {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}/*# sourceMappingURL=index.css.map */

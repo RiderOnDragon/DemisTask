@@ -1,0 +1,47 @@
+@use "../variables/variables" as v;
+
+.page__title {
+    margin: 1.7em;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1.273;
+    text-transform: uppercase;
+}
+
+.news {
+    margin-bottom: 30px;
+    padding: 15px;
+    box-shadow: 0 4px 20px v.$shadow-color;
+    
+
+    .news__title {
+        margin-bottom: 15px;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .news__title::before {
+        content: "";
+        display: inline-block;
+        position: relative;
+        top: calc(-0.1 * 1em);
+        vertical-align: middle;
+        width: 1.2em;
+        margin-right: .5em;
+        border-top: 4px solid v.$border-color2;
+    }
+
+    .news__content {
+        padding: 20px;
+        border: 5px solid v.$border-color2;
+        
+        .news__text {
+            margin-bottom: 20px;
+        }
+
+        .news__date {
+            font-size: 13px;
+            font-weight: 400;
+        }
+    }
+}

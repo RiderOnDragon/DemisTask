@@ -1,0 +1,107 @@
+.form-block {
+  padding: 20px;
+  padding-left: 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1490196078);
+}
+.form-block .form__title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+}
+.form-block .errors {
+  display: none;
+  margin: 15px;
+  padding: 20px;
+  background-color: rgba(221, 200, 13, 0.8431372549);
+}
+.form-block .errors .error {
+  margin-top: 10px;
+  color: #BA1735;
+}
+.form-block .errors .error:first-child {
+  margin-top: 0;
+}
+.form-block form {
+  width: 100%;
+}
+.form-block form .form__inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form-block form .form__inputs .inputs-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-block form .form__inputs .inputs-block label {
+  width: 100%;
+  position: relative;
+}
+.form-block form .form__inputs .inputs-block label input {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  padding: 0 17px;
+  border: 1px solid #D4D4C8;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+.form-block form .form__inputs .inputs-block label .animate__input__text {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(20%);
+  color: #999991;
+  font-size: 14px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+.form-block form .form__inputs .inputs-block label.focused .animate__input__text {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  font-size: 11px;
+}
+.form-block form .form__inputs .inputs-block .animate__input__text {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.form-block form .button-block {
+  margin-top: 20px;
+}
+
+.result-table {
+  display: none;
+  margin-top: -20vh;
+  padding: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1490196078);
+}
+.result-table table {
+  border: 1px solid #D4D4C8;
+  font-size: 20px;
+}
+.result-table table tr {
+  border: 1px solid #D4D4C8;
+}
+.result-table table tr td {
+  border: 1px solid #D4D4C8;
+  padding: 10px;
+}
+
+@media (max-width: 639px) {
+  .result-table {
+    margin-top: -5vh;
+  }
+}
+@media (max-width: 499px) {
+  .result-table table {
+    font-size: 9px;
+  }
+  .result-table table td {
+    padding: 5px;
+  }
+}/*# sourceMappingURL=feedback.css.map */
